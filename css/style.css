@@ -1,0 +1,62 @@
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC:400,700);
+
+body {
+  font-family: Lato;
+  font-size: 22px;
+  font-weight: 300;
+  background: #111;
+  margin: 0;
+}
+
+.intro .container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.intro .container img {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  width: 100%;
+}
+
+.intro .scene {
+  padding: 0;
+  margin: 0;
+}
+
+.layer:nth-child(1) {
+  opacity: 0.25;
+  height: 100vh;
+}
+
+.layer:nth-child(2) {
+  display: block;
+  font-size: 100px;
+  margin-top: 30vh;
+  right: 0;
+}
+
+.layer div {
+  color: white;
+  display: block;
+  font-family: Amatic SC;
+  font-weight:800;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.aboutme {
+  color: #EFF3CD;
+  background-color: #605063
+;
+  padding: 20px;
+}
+
+.aboutme h1 {
+  margin: 0;
+  font-size: 70px;
+  font-family: 'Droid Serif';
+}
