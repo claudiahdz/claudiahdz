@@ -22,4 +22,8 @@ $(document).ready(function(){
 	    return false;
 	});
 
+	// Parallax
+    var scene = document.getElementById('scene');
+    var parallax = new Parallax(scene);
+
 });

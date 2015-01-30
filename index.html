@@ -46,13 +46,15 @@
 
     <div class="layer-wrapper">
         <ul id="scene" class="scene">
-            <li class="layer" data-depth="0.00"><img src="img/layer1.jpg"></li>
-            <li class="layer" data-depth="0.30"><img src="img/layer2.png"></li>
+            <li class="layer" data-depth="0.00"><img src="img/layers/layer1.jpg"></li>
+            <li class="layer" data-depth="0.30"><img src="img/layers/layer2.png"></li>
             <li class="layer" data-depth="0.50"><div>Claudia Hernández<br>front-end engineer</div></li>
-            <li class="layer" data-depth="1.00"><img src="img/layer3.png"></li>
+            <li class="layer" data-depth="1.00"><img src="img/layers/layer3.png"></li>
         </ul>
 
     </div>
+
+    <span></span>
 
 </section>
 
@@ -115,16 +117,9 @@
 </section>
 
     <!-- Scripts -->
-    <script src="js/vendor/jquery-1.10.2.min.js"></script>
+    <script src="public/lib/jquery/dist/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/app.js"></script>
-    <script>
-
-    // Parallax
-    var scene = document.getElementById('scene');
-    var parallax = new Parallax(scene);
-
-    </script>
 
 </body>
 </html>
