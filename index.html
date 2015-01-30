@@ -20,12 +20,16 @@
           ga('send', 'pageview');
     </script>
 
-      <!-- Styles -->
-      <link rel="stylesheet" type="text/css" href="public/lib/skeleton/css/skeleton.css"/>
-      <link rel="stylesheet" type="text/css" href="public/lib/font-awesome/css/font-awesome.min.css"/>
+    <!-- Highlighting -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 
-      <!-- Custom Styles -->
-      <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="public/lib/skeleton/css/skeleton.css"/>
+    <link rel="stylesheet" type="text/css" href="public/lib/font-awesome/css/font-awesome.min.css"/>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
 
 </head>
 <body>
@@ -50,7 +54,6 @@
 
     </div>
 
-
 </section>
 
 <section id="portfolio" class="portfolio">
@@ -73,12 +76,26 @@
       
       <h1>About me</h1>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet cursus ipsum. Nam laoreet nulla vulputate sagittis blandit. Vivamus eu mollis turpis, eu iaculis est. Aliquam egestas auctor suscipit. Sed hendrerit quam vel purus placerat, non dictum dui blandit. Vivamus tincidunt mollis eros ut auctor. Nam pretium quis tortor nec pharetra. Nulla facilisi. Maecenas vel imperdiet est, in porttitor risus. Quisque rutrum ligula at scelerisque hendrerit. Quisque sed sem id urna consequat pretium eget eget lacus. Mauris bibendum cursus nulla, vel blandit mi vestibulum in.
+      <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet cursus ipsum. Nam laoreet nulla vulputate sagittis blandit. Vivamus eu mollis turpis, eu iaculis est. Aliquam egestas auctor suscipit. Sed hendrerit quam vel purus placerat, non dictum dui blandit. Vivamus tincidunt mollis eros ut auctor. Nam pretium quis tortor nec pharetra. Nulla facilisi. Maecenas vel imperdiet est, in porttitor risus. Quisque rutrum ligula at scelerisque hendrerit. Quisque sed sem id urna consequat pretium eget eget lacus. Mauris bibendum cursus nulla, vel blandit mi vestibulum in.
 
-Sed mauris dolor, rutrum et nisi eget, tincidunt imperdiet lacus. Quisque mollis mollis ipsum, eu vehicula tellus fermentum vel. Proin et ante aliquet sem convallis euismod. Nam iaculis purus ut felis blandit vulputate. Nam vehicula, sem sit amet ultricies sollicitudin, orci arcu vehicula erat, in porta ex lacus quis tellus. Suspendisse porta mauris quis bibendum vestibulum. Phasellus congue aliquam augue, non consequat nulla laoreet ac. Aliquam turpis metus, rutrum ac ullamcorper ac, egestas id nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eros leo, iaculis vel turpis sodales, mollis faucibus urna. Donec sollicitudin, est vitae pellentesque tempor, arcu libero laoreet ipsum, vel rutrum tellus velit eget nulla. Maecenas laoreet, turpis sed lobortis vulputate, nunc turpis volutpat libero, aliquet tristique magna felis ut lacus. Aenean aliquam tellus et turpis dapibus mattis ac ac lorem. Fusce sem enim, tempus eget blandit maximus, ullamcorper sed nisi.</p>
+      Sed mauris dolor, rutrum et nisi eget, tincidunt imperdiet lacus. Quisque mollis mollis ipsum, eu vehicula tellus fermentum vel. Proin et ante aliquet sem convallis euismod. Nam iaculis purus ut felis blandit vulputate. Nam vehicula, sem sit amet ultricies sollicitudin, orci arcu vehicula erat, in porta ex lacus quis tellus. Suspendisse porta mauris quis bibendum vestibulum. Phasellus congue aliquam augue, non consequat nulla laoreet ac. Aliquam turpis metus, rutrum ac ullamcorper ac, egestas id nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eros leo, iaculis vel turpis sodales, mollis faucibus urna. Donec sollicitudin, est vitae pellentesque tempor, arcu libero laoreet ipsum, vel rutrum tellus velit eget nulla. Maecenas laoreet, turpis sed lobortis vulputate, nunc turpis volutpat libero, aliquet tristique magna felis ut lacus. Aenean aliquam tellus et turpis dapibus mattis ac ac lorem. Fusce sem enim, tempus eget blandit maximus, ullamcorper sed nisi.
+
+      </p>
+
+        <pre>
+          <code>
+            .claudia-hdz {
+                fullname:     "Claudia Hernández Rivera";
+                degree:       "Computer Science";
+                nationality:  "Mexican";
+                age:          "24";
+            }
+          </code>
+        </pre>
+
 
     </div>
-
 
 </section>
 
@@ -97,14 +114,13 @@ Sed mauris dolor, rutrum et nisi eget, tincidunt imperdiet lacus. Quisque mollis
 
 </section>
 
-
     <!-- Scripts -->
-    <script src="js/parallax.min.js"></script>
     <script src="js/vendor/jquery-1.10.2.min.js"></script>
+    <script src="js/parallax.min.js"></script>
     <script src="js/app.js"></script>
     <script>
 
-    // Pretty simple huh?
+    // Parallax
     var scene = document.getElementById('scene');
     var parallax = new Parallax(scene);
 
