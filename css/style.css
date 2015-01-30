@@ -20,6 +20,7 @@ body {
   font-weight: 300;
   background: #111;
   margin: 0;
+  overflow-x: hidden;
 }
 
 p {
@@ -50,15 +51,17 @@ h1 {
   position: absolute;
   text-align: center;
   width: 100%;
+  z-index: 9999;
  }
 
  header.fixed {
-  animation: reveal 0.5s;
   -moz-animation: reveal 0.5s;
   -webkit-animation: reveal 0.5s;
+  -webkit-transform: translate3d(0,0,0);
+  animation: reveal 0.5s;
   background: url('../img/backgrounds/background-3.png');
   position: fixed;
-  z-index: 9999;
+
  }
 
 header ul {
@@ -186,7 +189,7 @@ header i {
 .aboutme {
   color: #EFF3CD;
   padding: 20px;
-  background: url('../img/backgrounds/background-1.png');
+  background: url('../img/backgrounds/background-5.png');
 }
 
 
@@ -199,6 +202,14 @@ header i {
 \*------------------------------------*/
 .contact {
   background-color: #61ADA0;
+  color: white;
+}
+
+.contact.parallax-section {
+  background-attachment: fixed;
+  background-image: url('../img/backgrounds/background-4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
