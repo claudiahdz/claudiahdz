@@ -7,9 +7,11 @@ $(document).ready(function(){
 
 		 if ($(window).scrollTop() >  pos) {
 		     $('header').addClass('fixed');
+		     $('.go-to-top').addClass('fixed');
 		 }
 		 else {
 		     $('header').removeClass('fixed');
+		     $('.go-to-top').removeClass('fixed');
 		 }
 
 	});
@@ -20,6 +22,20 @@ $(document).ready(function(){
 	        scrollTop: $( $(this).attr('href') ).offset().top - 30
 	    }, 500);
 	    return false;
+	});
+
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 220) {
+			$('.go-to-top').fadeIn(500);
+		} else {
+			$('.go-to-top').fadeOut(500);
+		}
+	});
+
+	$('.go-to-top').click(function(event) {
+		event.preventDefault();
+		$('html, body').animate({scrollTop: 0}, 500);
+		return false;
 	});
 
 	// Parallax

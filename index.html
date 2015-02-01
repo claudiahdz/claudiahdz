@@ -20,10 +20,6 @@
           ga('send', 'pageview');
     </script>
 
-    <!-- Highlighting -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="public/lib/skeleton/css/skeleton.css"/>
     <link rel="stylesheet" type="text/css" href="public/lib/font-awesome/css/font-awesome.min.css"/>
@@ -64,58 +60,91 @@
 
     <h1>Portfolio</h1>
 
-    <p>
-       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet cursus ipsum. Nam laoreet nulla vulputate sagittis blandit. Vivamus eu mollis turpis, eu iaculis est. Aliquam egestas auctor suscipit. Sed hendrerit quam vel purus placerat, non dictum dui blandit. Vivamus tincidunt mollis eros ut auctor. Nam pretium quis tortor nec pharetra. Nulla facilisi. Maecenas vel imperdiet est, in porttitor risus. Quisque rutrum ligula at scelerisque hendrerit. Quisque sed sem id urna consequat pretium eget eget lacus. Mauris bibendum cursus nulla, vel blandit mi vestibulum in.  
-    </p>
+    <div class="row">
+      
+      <div class="description six columns">
+        
+        <h3>Gilsa - Pisos y Azulejos</h3>
+        <span>Interactive Site</span><span><a href="http://www.gilsa.com/">View <i class="fa fa-globe"></i></a></span>
+        <hr>
+          <img src="img/portfolio/gilsa.jpg" alt="gilsa">
+          <p>Worked on the front-end development of the website of a tile and flooring company. Integration was made with the <em>Twig</em> templating system and <em>Twitter Bootstrap</em> was used as well.</p>
+      </div>
+
+      <div class="description six columns">
+        
+        <h3>Kidscenter</h3>
+        <span>Interactive Site</span><span><a href="http://www.kidscenter.biz/">View <i class="fa fa-globe"></i></a></span>
+        <hr>
+        <img src="img/portfolio/kidscenter.jpg" alt="kidscenter">
+        <p>Development of an interactive website for a kindergarten. Heavily worked on the website animations using purely <em>CSS</em>. <em>Parallax</em> design was chosen for a more smooth user experience.</p>   
+      </div>
+
+    </div>
+
+    <div class="row">
+      
+      <div class="description six columns">
+        
+        <h3>Ecommerce Site</h3>
+        <span>Responsive HTML Template</span>
+        <hr>
+          <img src="img/portfolio/ecommerce.jpg" alt="ecommerce">
+          <p>Created a <em>HTML</em> template for an ecommerce site. Completely <em>responsive</em>, the template includes products views, product detail view and others.</p>
+      </div>
+
+      <div class="description six columns">
+        
+        <h3>Niva Status Panel</h3>
+        <span>TV Panel</span>
+        <hr>
+        <img src="img/portfolio/nivapanel.jpg" alt="nivapanel">
+        <p>Design and development of a TV Status Panel. <em>Photoshop</em> was used for creating mockups and integration was made using <em>AngularJS</em>. In order to setup the TV with the panel, a <em>Raspberry</em> deviced was configured.</p>   
+      </div>
+
+    </div>
      
   </div>
 
 </section>
 
-<section id="aboutme" class="aboutme">
+<section id="aboutme" class="aboutme parallax-section">
 
     <div class="container">
       
       <h1>About me</h1>
 
       <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet cursus ipsum. Nam laoreet nulla vulputate sagittis blandit. Vivamus eu mollis turpis, eu iaculis est. Aliquam egestas auctor suscipit. Sed hendrerit quam vel purus placerat, non dictum dui blandit. Vivamus tincidunt mollis eros ut auctor. Nam pretium quis tortor nec pharetra. Nulla facilisi. Maecenas vel imperdiet est, in porttitor risus. Quisque rutrum ligula at scelerisque hendrerit. Quisque sed sem id urna consequat pretium eget eget lacus. Mauris bibendum cursus nulla, vel blandit mi vestibulum in.
-
-      Sed mauris dolor, rutrum et nisi eget, tincidunt imperdiet lacus. Quisque mollis mollis ipsum, eu vehicula tellus fermentum vel. Proin et ante aliquet sem convallis euismod. Nam iaculis purus ut felis blandit vulputate. Nam vehicula, sem sit amet ultricies sollicitudin, orci arcu vehicula erat, in porta ex lacus quis tellus. Suspendisse porta mauris quis bibendum vestibulum. Phasellus congue aliquam augue, non consequat nulla laoreet ac. Aliquam turpis metus, rutrum ac ullamcorper ac, egestas id nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eros leo, iaculis vel turpis sodales, mollis faucibus urna. Donec sollicitudin, est vitae pellentesque tempor, arcu libero laoreet ipsum, vel rutrum tellus velit eget nulla. Maecenas laoreet, turpis sed lobortis vulputate, nunc turpis volutpat libero, aliquet tristique magna felis ut lacus. Aenean aliquam tellus et turpis dapibus mattis ac ac lorem. Fusce sem enim, tempus eget blandit maximus, ullamcorper sed nisi.
-
+      Hi ! I'm a 24 years old mexican web developer. I'm passionate about technology, always paying close attention to new trends. I'm highly interested in UX and Responsive web design. I'm always looking forward to freelance work so feel free to contact me for any further information.
       </p>
-
-        <pre>
-          <code>
-            .claudia-hdz {
-                fullname:     "Claudia Hernández Rivera";
-                degree:       "Computer Science";
-                nationality:  "Mexican";
-                age:          "24";
-            }
-          </code>
-        </pre>
-
 
     </div>
 
 </section>
 
-<section id="contact" class="contact parallax-section">
+<!-- <section class="education">
+  <p>lorem</p>
+</section> -->
+
+<section id="contact" class="contact">
 
   <div class="container">
 
-      <h1>Contact Me</h1>
+      <ul class="icons">
+          <li><a href="http://twitter.com/koste4" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+          <li><a href="http://github.com/claudiahdz" class="icon circle fa-github"><span class="label">Github</span></a></li>
+          <li><a href="mailto:hi@claudiahdz.me" class="icon circle fa-envelope-o"><span class="label">Email</span></a></li>
+          <li><a href="http://linkedin.com/in/claudiahdz" class="icon circle fa-linkedin"><span class="label">Linkedin</span></a></li>
+      </ul>
 
-      <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet cursus ipsum. Nam laoreet nulla vulputate sagittis blandit. Vivamus eu mollis turpis, eu iaculis est. Aliquam egestas auctor suscipit. Sed hendrerit quam vel purus placerat, non dictum dui blandit. Vivamus tincidunt mollis eros ut auctor. Nam pretium quis tortor nec pharetra. Nulla facilisi. Maecenas vel imperdiet est, in porttitor risus. Quisque rutrum ligula at scelerisque hendrerit. Quisque sed sem id urna consequat pretium eget eget lacus. Mauris bibendum cursus nulla, vel blandit mi vestibulum in.
-      </p>
+      <small>© 2015 Claudia Hernández</small>
 
-    
   </div>
 
 </section>
 
+<!-- <span class="go-to-top"></span>
+ -->
     <!-- Scripts -->
     <script src="public/lib/jquery/dist/jquery.min.js"></script>
     <script src="public/lib/parallax/deploy/parallax.min.js"></script>

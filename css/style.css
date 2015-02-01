@@ -1,9 +1,8 @@
 /*------------------------------------*\
     #Imports
 \*------------------------------------*/
-@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700);
 @import url(http://fonts.googleapis.com/css?family=Amatic+SC:400,700);
-@import url('tomorrow-night-eighties.css');
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 @import url('animations.css');
 
 
@@ -15,7 +14,7 @@
     #Global-Settings
 \*------------------------------------*/
 body {
-  font-family: Josefin Sans;
+  font-family: Lato;
   font-size: 22px;
   font-weight: 300;
   background: #111;
@@ -31,6 +30,13 @@ h1 {
   padding-top: 20px;
   font-size: 70px;
   font-family: Amatic SC;
+}
+
+small {
+  display: block;
+  font-size: 14px;
+  margin: -15px auto 15px auto;
+  text-align: center;
 }
 
 
@@ -95,6 +101,10 @@ header i {
   font-size: 25px !important;
   margin: 0 30px;
   vertical-align: middle;
+}
+
+header.fixed i {
+  color: #F9D423;
 }
 
 
@@ -175,9 +185,47 @@ header i {
     #Portfolio
 \*------------------------------------*/
 .portfolio {
-  background-color: #248F8D;
-
+  color: white;
+  background: url('../img/backgrounds/background-5.png');
 }
+
+.portfolio h3 {
+  margin: 0;
+}
+
+.portfolio hr {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 18px;
+}
+
+.description span {
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.description span:first-of-type {
+  color: #FC354C;
+}
+
+.description span:nth-of-type(2) {
+  float: right;
+}
+
+.description a {
+  text-decoration: none;
+}
+
+.description em {
+  font-style: normal;
+  color: #0FA0CE;
+  font-weight: 700;
+}
+
 
 
 
@@ -186,10 +234,31 @@ header i {
 /*------------------------------------*\
     #About-Me
 \*------------------------------------*/
-.aboutme {
+.aboutme.parallax-section {
   color: #EFF3CD;
   padding: 20px;
-  background: url('../img/backgrounds/background-6.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url('../img/backgrounds/background-4.jpg');
+}
+
+.aboutme p {
+  color: black;
+  padding: 20px;
+  background-color: white;
+}
+
+
+
+
+
+
+/*------------------------------------*\
+    #Education
+\*------------------------------------*/
+.education {
+  background-color: red;
 }
 
 
@@ -201,18 +270,135 @@ header i {
     #Contact
 \*------------------------------------*/
 .contact {
-  background-color: #61ADA0;
+  width: 100%;
+  background-color: white;
+  background-image: url(../img/assets/contact_bg.png);
+  background-position: center top;
+  clear: both;
+  float: left;
+  position: relative;
+}
+
+.contact:before {
+  background-size: cover;
+  background: url(../img/assets/contact_top.png) center top no-repeat;
+  content: "";
+  height: 46px;
+  left: 0px;
+  position: absolute;
+  top: -46px;
+  width: 100%;
+}
+
+.contact li {
+  display: inline-block;
+}
+
+/* Icons */
+
+.icons {
+  display: block;
+  text-align: center; 
+  margin-top: 50px;
+}
+
+.icon {
+  position: relative;
+}
+
+.icon:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+
+.icon.circle {
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border: 0;
+  border-radius: 100%;
+  display: inline-block;
+  font-size: 1.25em;
+  height: 2.25em;
+  left: 0;
+  line-height: 2.25em;
+  text-align: center;
+  text-decoration: none;
+  top: 0;
+  width: 2.25em;
+}
+
+.icon.circle:hover {
+  top: -0.2em;
+}
+
+.icon.circle.fa-twitter {
+  background: #70aecd;
   color: white;
 }
 
-.contact.parallax-section {
-  background-attachment: fixed;
-  background-image: url('../img/backgrounds/background-4.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+.icon.circle.fa-twitter:hover {
+  background: #7fb7d2;
 }
 
+.icon.circle.fa-linkedin {
+  background: #7490c3;
+  color: white;
+}
 
+.icon.circle.fa-linkedin:hover {
+  background: #829bc9;
+}
 
+.icon.circle.fa-envelope-o {
+  background: #db6b67;
+  color: white;
+}
 
+.icon.circle.fa-envelope-o:hover {
+  background: #df7b77;
+}
 
+.icon.circle.fa-github {
+  background: #dcad8b;
+  color: white;
+}
+
+.icon.circle.fa-github:hover {
+  background: #e1b89b;
+}
+
+.icon.featured {
+  cursor: default;
+  display: block;
+  margin: 0 0 1.5em 0;
+  opacity: 0.35;
+  text-align: center;
+}
+
+.icon.featured:before {
+  font-size: 5em;
+  line-height: 1em;
+}
+
+.icon > .label {
+  display: none;
+}
+
+/* Go To Top */
+.go-to-top.fixed {
+  background: url(../img/assets/go_to_top.png);
+  bottom: 15px;
+  cursor: pointer;
+  height: 43px;
+  position: fixed;
+  right: 15px;
+  width: 42px;
+  z-index: 999;
+}
