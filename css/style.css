@@ -459,6 +459,7 @@ header.fixed i {
 
 /* Go To Top */
 .go-to-top.fixed {
+  -webkit-transform: translate3d(0,0,0);
   background: url(../img/assets/go_to_top.png);
   bottom: 15px;
   cursor: pointer;

@@ -4,14 +4,20 @@ $(document).ready(function(){
 	$(window).bind('scroll', function() {
 
 		var pos = $('.portfolio').position().top;
+		var intro = $('.intro').position().top;
 
 		 if ($(window).scrollTop() >  pos) {
 		     $('header').addClass('fixed');
-		     $('.go-to-top').addClass('fixed');
 		 }
 		 else {
 		     $('header').removeClass('fixed');
-		     $('.go-to-top').removeClass('fixed');
+		 }
+
+		 if ($(window).scrollTop() < intro) {
+		 	$('.go-to-top').removeClass('fixed');
+		 }
+		 else {
+		    $('.go-to-top').addClass('fixed');
 		 }
 
 	});
