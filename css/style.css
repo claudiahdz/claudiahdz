@@ -3,6 +3,7 @@
 \*------------------------------------*/
 @import url(http://fonts.googleapis.com/css?family=Amatic+SC:400,700);
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Loved+by+the+King);
 @import url('animations.css');
 
 
@@ -70,7 +71,7 @@ small {
   -webkit-animation: reveal 0.5s;
   -webkit-transform: translate3d(0,0,0);
   animation: reveal 0.5s;
-  background: url('../img/backgrounds/background-3.png');
+  background: url('../img/backgrounds/background-header.png');
   position: fixed;
 
  }
@@ -191,7 +192,7 @@ header.fixed i {
 \*------------------------------------*/
 .portfolio {
   color: white;
-  background: url('../img/backgrounds/background-5.png');
+  background: url('../img/backgrounds/background-portfolio.png');
 }
 
 .portfolio h3 {
@@ -279,18 +280,29 @@ header.fixed i {
   color: bisque;
 }
 
+.aboutme em {
+  font-style: normal;
+  color: #0FA0CE;
+  font-weight: 700;
+}
+
 .aboutme p:first-of-type {
   color: aquamarine;
+}
+
+.aboutme .row .three.columns {
+  margin-top: 30px;
 }
 
 .aboutme .row .three.columns img {
   border-radius: 50%;
   float: left;
-  margin-right: 30px;
+  margin-bottom: 25px;
   width: 150px;
 }
 
 .aboutme .area { 
+  color: bisque;
   font-size: 16px;
   font-weight: 400;
   margin: 15px;
@@ -312,18 +324,30 @@ header.fixed i {
   text-align: right;
 }
 
+.aboutme .nutshell {
+  display: block;
+  font-family: Loved by the King;
+  font-size: 30px;
+  list-style: none;
+  text-align: center;
+}
 
-
+.aboutme .nutshell li {
+  display: inline-block;
+  margin: 20px 30px;
+  text-align: center;
+}
 
 
 
 /*------------------------------------*\
-    #Education
+    #Experience
 \*------------------------------------*/
-.education {
+.experience {
+  color: white;
   background-color: red;
   height: 300px;
-  background-image: url('../img/backgrounds/background-6.png');
+  background-image: url('../img/backgrounds/background-7.png');
 
 }
 
@@ -365,7 +389,14 @@ header.fixed i {
 .icons {
   display: block;
   text-align: center; 
-  margin-top: 50px;
+  margin-top: 80px;
+}
+
+.icons img {
+  position: absolute;
+  top: -65px;
+  width: 100px;
+  z-index: 9999;
 }
 
 .icon {
