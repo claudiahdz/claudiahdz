@@ -25,7 +25,7 @@ $(document).ready(function(){
 	// Smooth Scrolling
 	$('a.smooth').click(function(){
 	    $('html, body').animate({
-	        scrollTop: $( $(this).attr('href') ).offset().top - 30
+	        scrollTop: $( $(this).attr('href') ).offset().top - 50
 	    }, 500);
 	    return false;
 	});
@@ -50,6 +50,10 @@ $(document).ready(function(){
 
     $('.parallax-section').parallax({
 		speed : 0.15
+	});
+
+	$('div.resources img').on('mouseover', function(){
+		$(this).addClass('colored');
 	});
 
 });

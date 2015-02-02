@@ -36,6 +36,7 @@ h1 {
 h2 {
   font-family: Amatic SC;
   font-size: 60px;
+  margin: 0;
 }
 
 small {
@@ -340,15 +341,66 @@ header.fixed i {
 
 
 
-/*------------------------------------*\
-    #Experience
-\*------------------------------------*/
-.experience {
-  color: white;
-  background-color: red;
-  height: 300px;
-  background-image: url('../img/backgrounds/background-7.png');
 
+
+
+/*------------------------------------*\
+    #Resources
+\*------------------------------------*/
+.resources {
+  background-color: red;
+  background-image: url('../img/backgrounds/background-resources.png');
+  color: white;
+}
+
+.resources .container {
+  padding-bottom: 40px;
+}
+
+.resources img {
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: -webkit-filter 5s linear;
+  filter: grayscale(100%);
+  height: 80px;
+  transition: -webkit-filter 500ms linear;
+  margin: 15px 30px;
+}
+
+.resources img:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.colored {
+  -webkit-filter: grayscale(0%) !important;
+  filter: grayscale(0%) !important;
+}
+
+div.resources {
+  text-align: center;
+}
+
+.stuff {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.stuff a {
+  color: darkturquoise;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.stuff a:hover {
+  color: chartreuse;
+}
+
+.stuff li {
+  display: inline-block;
+  padding: 5px 8px;
+  text-align: center;
+  width: 221px;
 }
 
 
