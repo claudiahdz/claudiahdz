@@ -6,8 +6,10 @@ $(document).ready(function(){
 
 	if (mobile.matches){	
 
-		var src = 'img/layers/layer1-mobile.jpg';
-		$('.layer:first-child img').attr("src", src);
+		var layer1 = 'img/layers/layer1-mobile.jpg';
+		var layer3 = 'img/layers/layer3-mobile.png';
+		$('.layer:first-child img').attr("src", layer1);
+		$('.layer:nth-child(4) img').attr("src", layer3);
 
 		$('.aboutme .pictures').removeClass('three').addClass('twelve');
 		
@@ -19,8 +21,10 @@ $(document).ready(function(){
 
 		if (mobile.matches){	
 
-			var src = 'img/layers/layer1-mobile.jpg';
-			$('.layer:first-child img').attr("src", src);
+			var layer1 = 'img/layers/layer1-mobile.jpg';
+			var layer3 = 'img/layers/layer3-mobile.png';
+			$('.layer:first-child img').attr("src", layer1);
+			$('.layer:nth-child(4) img').attr("src", layer3);
 
 			$('.aboutme .pictures').removeClass('three').addClass('twelve');
 
@@ -28,8 +32,10 @@ $(document).ready(function(){
 
 		} else {
 
-			var src = 'img/layers/layer1.jpg';
-			$('.layer:first-child img').attr("src", src);
+			var layer1 = 'img/layers/layer1.jpg';
+			var layer3 = 'img/layers/layer3.png';
+			$('.layer:first-child img').attr("src", layer1);
+			$('.layer:nth-child(4) img').attr("src", layer3);
 
 			$('.aboutme .pictures').removeClass('twelve').addClass('three');
 

@@ -40,12 +40,13 @@
 
 	.layer:nth-child(3) {
 		font-size: 80px !important;
-		margin: 80px 0 !important;
+		margin: 0 !important;
+		position: absolute !important;
+		top: 40% !important;
+		bottom: 50% !important;
 	}
 
-	.layer:nth-child(4) {
-		display: none !important;
-	}
+
 
 
 
@@ -88,5 +89,19 @@
 
 
 
+
+}
+
+ /* Small mobile devices */
+@media screen and (max-width: 330px) {
+
+
+ 	.layer:nth-child(3) {
+		font-size: 80px !important;
+		margin: 0 !important;
+		position: absolute !important;
+		top: 15% !important;
+		bottom: 50% !important;
+	}
 
 }
