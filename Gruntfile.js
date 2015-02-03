@@ -8,24 +8,24 @@ module.exports = function(grunt) {
     // Task configuration.
     concat: {
       js: {
-        src: ['js/**/*.js'],
-        dest: 'dist/js/main.min.js'
+        src: ['js/parallax-plugin.js','js/responsive.js', 'js/app.js'],
+        dest: 'dist/main.min.js'
       },
       css:  {
-        src: ['css/**/*.css'],
-        dest: 'dist/css/main.min.css'
+        src: ['css/responsive-queries.css', 'css/animations.css', 'css/style.css'],
+        dest: 'dist/main.min.css'
       }
     },
     uglify: {
       dist: {
-        src: 'dist/js/main.min.js',
-        dest: 'dist/js/main.min.js'
+        src: 'dist/main.min.js',
+        dest: 'dist/main.min.js'
       }
     },
     cssmin: {
       dist: {
-        src: ['dist/css/main.min.css'],
-        dest: 'dist/css/main.min.css'
+        src: ['dist/main.min.css'],
+        dest: 'dist/main.min.css'
       }
     },
     gruntfile: {
@@ -40,6 +40,6 @@ module.exports = function(grunt) {
 
 
   // Default task.
-  grunt.registerTask('build', ['concat', 'uglify', 'cssmin']);
+  grunt.registerTask('build', ['concat', 'uglify','cssmin']);
 
 };
