@@ -1,10 +1,48 @@
+/*
+ *  Filename:     style.css
+ *  Description:  Global CSS
+ *  Version:      1.0.0 (2015-02-02)
+ *  Website:      claudiahdz.me
+ *  Author:       Claudia Hernández Rivera
+ *
+ */
+
+/**
+ * CONTENTS
+ *
+ * IMPORTS..............Fonts & other imported CSS styles.
+ *
+ * GLOBAL SETTINGS......Globally-available variables and config.
+ *
+ * HEADER...............The main page header.
+ *
+ * MAIN.................Parallax layers customization.
+ *
+ * PORTFOLIO
+ *
+ * ABOUT ME
+ *
+ * RESOURCES
+ *
+ * CONTACT..............The page main footer with contact information.
+ * Icons................Footer contact icons.
+ * Go to top............Custom buttom at the bottom for scrolling.
+ */
+
+
+
+
+
+
 /*------------------------------------*\
     #Imports
 \*------------------------------------*/
 @import url(http://fonts.googleapis.com/css?family=Amatic+SC:400,700);
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 @import url(http://fonts.googleapis.com/css?family=Loved+by+the+King);
+@import url('responsive-queries.css');
 @import url('animations.css');
+
 
 
 
@@ -207,6 +245,10 @@ header.fixed i {
 
 .description {
   font-size: 18px;
+}
+
+.description img {
+  width: 100%;
 }
 
 .description span {
@@ -541,6 +583,7 @@ div.resources {
 }
 
 /* Go To Top */
+
 .go-to-top.fixed {
   -webkit-transform: translate3d(0,0,0);
   background: url(../img/assets/go_to_top.png);

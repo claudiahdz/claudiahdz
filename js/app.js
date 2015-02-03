@@ -56,4 +56,7 @@ $(document).ready(function(){
 		$(this).addClass('colored');
 	});
 
+	// VH Units Fix
+	window.viewportUnitsBuggyfill.init();
+
 });
