@@ -61,6 +61,7 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Loved+by+the+King' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Gochi+Hand' rel='stylesheet' type='text/css'>
 
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="bower_components/skeleton/css/skeleton.css"/>
@@ -70,7 +71,7 @@
     <link rel="stylesheet" type="text/css" href="dist/main.min.css"/>
 
 </head>
-<body>
+<body ng-app="claudiaApp">
 
 <header>
   <ul>
@@ -298,6 +299,17 @@
 
 </section>
 
+<section ng-controller="FunStuffCtrl" class="fun-stuff parallax-section">
+
+<h1>Insta-Fun!</h1><small>My latest photos</small>
+
+<div class="polaroid" ng-repeat="picture in pictures">
+  <p>{{ picture.caption }}</p>
+  <img class="instapictures" ng-src="{{ picture.url }}" alt="{{ picture.caption }}">
+</div>
+
+</section>
+
 <footer class="contact">
 
   <div class="container">
@@ -321,8 +333,10 @@
     <!-- Scripts -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/parallax/deploy/parallax.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/viewport-units-buggyfill/viewport-units-buggyfill.js"></script>
     <script src="dist/main.min.js"></script>
-
+    <script src="js/controller.js"></script>
+    
 </body>
 </html>
