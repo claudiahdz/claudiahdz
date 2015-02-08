@@ -462,8 +462,8 @@ div.resources {
   -webkit-transition: -webkit-transform .15s linear;
   -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
   -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
-  border: 10px solid ghostwhite;
-  border-bottom: 65px solid ghostwhite;
+  border: 10px solid honeydew;
+  border-bottom: 65px solid honeydew;
   width: 220px;
 }
 
