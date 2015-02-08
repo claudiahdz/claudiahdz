@@ -15,6 +15,8 @@ $(document).ready(function(){
 		
 		$('.aboutme .nine.columns.info').removeClass('nine').addClass('twelve');
 
+		$('.parallax-section').removeClass('.parallax-section');
+
 	}
 
 	$(window).resize(function(){
