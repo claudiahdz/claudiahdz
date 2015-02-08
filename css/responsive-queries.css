@@ -134,5 +134,26 @@
 
 
 
+	/*------------------------------------*\
+    	#About-Me
+	\*------------------------------------*/
+	.aboutme {
+		color: white;
+		background-repeat: repeat !important;
+		background-attachment: inherit;
+	}
 
+
+
+
+
+
+	/*------------------------------------*\
+    	#Fun-Stuff
+	\*------------------------------------*/
+	.fun-stuff {
+		background-repeat: repeat !important;
+		background-attachment: inherit;
+	}
+	
 }
