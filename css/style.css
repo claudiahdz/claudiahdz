@@ -459,11 +459,13 @@ div.resources {
 }
 
 .fun-stuff .polaroid img {
-  -webkit-transition: -webkit-transform .15s linear;
   -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  -webkit-border-image: url('../img/assets/polaroid-texture.png') 50 50 stretch;
   -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+  -webkit-transition: -webkit-transform .15s linear;
   border: 10px solid honeydew;
   border-bottom: 65px solid honeydew;
+  border-image: url('../img/assets/polaroid-texture.png') 50 50 stretch;
   width: 220px;
 }
 
