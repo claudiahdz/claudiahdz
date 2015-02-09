@@ -395,6 +395,7 @@ header.fixed i {
 .aboutme .bookshelf.container {
     max-width: 600px !important;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .aboutme .bookshelf.container .row {
