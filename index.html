@@ -174,7 +174,7 @@
 
 -->
 
-<section id="aboutme" class="aboutme parallax-section">
+<section id="aboutme" ng-controller="FunStuffCtrl" class="aboutme parallax-section">
 
     <div class="container">
       
@@ -266,6 +266,12 @@
       <li><img src="img/assets/nut-6.png"><div>Traveling</div></li>
     </ul>
 
+    <h1>Currently Reading</h1>
+    <div ng-repeat="book in currentlyReading">
+    <p>{{ book.title }}</p>
+    <img ng-src="{{ book.img }}">
+    </div>
+    
 </section>
 
 <section id="resources" class="resources">

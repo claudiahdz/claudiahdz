@@ -32,4 +32,29 @@ claudiaAppControllers.controller('FunStuffCtrl', function($scope, $http){
 
 	});
 
+
+	var url = "https://www.goodreads.com/review/list/6271152.xml?key=IOWu18eJ7UGIqur8C6YFw&v=2&shelf=currently-reading";
+	$scope.currentlyReading = [];
+
+	$.get("http://query.yahooapis.com/v1/public/yql",
+    {
+        q: "select * from xml where url=\""+url+"\"",
+        format: "json"
+    },
+
+    function(data) {   
+
+    	var info = data.query.results.GoodreadsResponse.reviews.review;
+
+    	$scope.$apply(function() {
+
+    		$.each(info, function (i, val) {
+
+    			$scope.currentlyReading.push({ title: val.book.title, img: val.book.image_url });
+    		
+    		});
+
+    	});
+	});
+
 });
