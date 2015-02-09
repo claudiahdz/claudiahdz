@@ -414,6 +414,7 @@ header.fixed i {
 
 .aboutme .item img {
   transition: all .2s;
+  width: 125px;
 }
 
 .aboutme .bubble {

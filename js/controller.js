@@ -32,7 +32,6 @@ claudiaAppControllers.controller('FunStuffCtrl', function($scope, $http){
 
 	});
 
-
 	var url = "https://www.goodreads.com/review/list/6271152.xml?key=IOWu18eJ7UGIqur8C6YFw&v=2&shelf=currently-reading";
 	$scope.currentlyReading = [];
 
@@ -50,7 +49,14 @@ claudiaAppControllers.controller('FunStuffCtrl', function($scope, $http){
 
     		$.each(info, function (i, val) {
 
-    			$scope.currentlyReading.push({ title: val.book.title, author: val.book.authors.author.name, img: val.book.image_url });
+    			// Javascript Magic
+    			var url = val.book.image_url;
+    			var n = 0;
+    			url = url.replace(/m/g, function(match) {
+    				n++; return (n === 2) ? "l" : match;
+    			});
+    		
+    			$scope.currentlyReading.push({ title: val.book.title, author: val.book.authors.author.name, img: url });
     		
     		});
 
