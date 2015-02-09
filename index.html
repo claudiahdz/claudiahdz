@@ -256,6 +256,20 @@
 
     </div>
 
+    <h2>Currently Reading</h2>
+    <div class="bookshelf container">
+      <div class="row">
+          <div class="item" ng-repeat="book in currentlyReading" alt="{{ book.title }} ">
+             <img ng-src="{{ book.img }}">
+             <div class="bubble">
+              <strong>Title: </strong>{{ book.title }}<br>
+              <strong>Author: </strong>{{ book.author }}
+             </div>
+          </div>    
+          <div class="twelve columns shelf"></div>
+      </div>
+    </div> 
+
     <h1>In a nutshell..</h1>
     <ul class="nutshell">
       <li><img src="img/assets/nut-1.png"><div>Writing</div></li>
@@ -266,12 +280,6 @@
       <li><img src="img/assets/nut-6.png"><div>Traveling</div></li>
     </ul>
 
-    <h1>Currently Reading</h1>
-    <div ng-repeat="book in currentlyReading">
-    <p>{{ book.title }}</p>
-    <img ng-src="{{ book.img }}">
-    </div>
-    
 </section>
 
 <section id="resources" class="resources">

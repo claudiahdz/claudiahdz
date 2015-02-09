@@ -364,6 +364,101 @@ header.fixed i {
   text-align: center;
 }
 
+.aboutme .book {
+  padding: 15px 0 0 0;
+  margin: auto;
+  -moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
+  padding: 0;
+}
+
+.aboutme .shelf {
+  border-bottom: 30px solid burlywood;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  top: -15px;
+  z-index: -10;
+}
+
+.aboutme .shelf:after {
+  background-image: url('../img/assets/wood-pattern.jpg');
+  content: '';
+  height: 20px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+  z-index: 1;
+}
+
+.aboutme .bookshelf.container {
+    max-width: 600px !important;
+    margin-bottom: 30px;
+}
+
+.aboutme .bookshelf.container .row {
+  text-align: center;
+}
+
+.aboutme .item {
+  margin: 0 auto -20px auto;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  bottom: -20px;
+  padding: 0 20px;
+  transition: all .2s;
+}
+
+/*.aboutme .item:hover {
+  -moz-transform: scale(1.25) translate3d( 0, 0, 0);
+  -webkit-transform: scale(1.25) translate3d( 0, 0, 0);
+  position: relative;
+  z-index: 5;
+}*/
+
+.aboutme .bubble {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  bottom: -100px;
+  color: black;
+  font-size: 16px;
+  height: 80px;
+  left: -85px;
+  opacity: .5;
+  padding: 20px;
+  position: absolute;
+  transition: all .3s;
+  visibility: hidden;
+  width: 280px;
+  z-index: 9999;
+}
+
+.aboutme .bubble:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 0 15px 15px;
+  border-color: #FFFFFF transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  top: -15px;
+  left: 110px;
+}
+
+.aboutme .bubble p { 
+  color: black !important;
+}
+
+.aboutme .item:hover .bubble {
+  visibility: visible;
+  opacity: 1;
+}
+
 
 
 
@@ -480,36 +575,36 @@ div.resources {
 
 /* Rotations */
 .polaroid  {
-  -webkit-transform: rotate(-2deg) translate3d( 0, 0, 0);;
-  -moz-transform: rotate(-2deg) translate3d( 0, 0, 0);;
+  -webkit-transform: rotate(-2deg) translate3d( 0, 0, 0);
+  -moz-transform: rotate(-2deg) translate3d( 0, 0, 0);
 }
  
 /* Rotate all even images 2 degrees */
 .polaroid:nth-child(even) {
-  -webkit-transform: rotate(2deg) translate3d( 0, 0, 0);;
-  -moz-transform: rotate(2deg) translate3d( 0, 0, 0);;
+  -webkit-transform: rotate(2deg) translate3d( 0, 0, 0);
+  -moz-transform: rotate(2deg) translate3d( 0, 0, 0);
 }
  
 /* Don't rotate every third image, but offset its position */
 .polaroid:nth-child(3n) {
-  -webkit-transform: none translate3d( 0, 0, 0);;
-  -moz-transform: none translate3d( 0, 0, 0);;
+  -webkit-transform: none translate3d( 0, 0, 0);
+  -moz-transform: none translate3d( 0, 0, 0);
   position: relative;
   top: -5px;
 }
  
 /* Rotate every fifth image by 5 degrees and offset it */
 .polaroids:nth-child(5n) {
-  -webkit-transform: rotate(5deg) translate3d( 0, 0, 0);;
-  -moz-transform: rotate(5deg) translate3d( 0, 0, 0);;
+  -webkit-transform: rotate(5deg) translate3d( 0, 0, 0);
+  -moz-transform: rotate(5deg) translate3d( 0, 0, 0);
   position: relative;
   right: 5px;
 
 }
 
 .polaroid:hover {
-  -moz-transform: scale(1.25) translate3d( 0, 0, 0);;
-  -webkit-transform: scale(1.25) translate3d( 0, 0, 0);;
+  -moz-transform: scale(1.25) translate3d( 0, 0, 0);
+  -webkit-transform: scale(1.25) translate3d( 0, 0, 0);
   position: relative;
   z-index: 5;
 }

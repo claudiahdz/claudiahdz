@@ -50,7 +50,7 @@ claudiaAppControllers.controller('FunStuffCtrl', function($scope, $http){
 
     		$.each(info, function (i, val) {
 
-    			$scope.currentlyReading.push({ title: val.book.title, img: val.book.image_url });
+    			$scope.currentlyReading.push({ title: val.book.title, author: val.book.authors.author.name, img: val.book.image_url });
     		
     		});
 
