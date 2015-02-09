@@ -412,6 +412,10 @@ header.fixed i {
   transition: all .2s;
 }
 
+.aboutme .item img {
+  transition: all .2s;
+}
+
 .aboutme .bubble {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -448,9 +452,16 @@ header.fixed i {
   color: black !important;
 }
 
+.aboutme .item:hover img {
+  -moz-transform: scale(1.25) translate3d( 0, 0, 0);
+  -webkit-transform: scale(1.25) translate3d( 0, 0, 0);
+  position: relative;
+  z-index: 5;
+}
+
 .aboutme .item:hover .bubble {
-  visibility: visible;
   opacity: 1;
+  visibility: visible;
 }
 
 

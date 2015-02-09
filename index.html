@@ -261,8 +261,8 @@
       <div class="item" ng-repeat="book in currentlyReading">
          <img ng-src="{{ book.img }}" alt="{{ book.title }}">
          <div class="bubble">
-          <strong>Title: </strong>{{ book.title }}<br>
-          <strong>Author: </strong>{{ book.author }}
+          <strong>{{ book.title }}</strong><br>
+          {{ book.author }}
          </div>
       </div>    
       <div class="shelf"></div>
