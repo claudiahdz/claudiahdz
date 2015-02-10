@@ -259,7 +259,11 @@
     <h2>Currently Reading</h2>
     <div class="bookshelf container">
       <div class="item" ng-repeat="book in currentlyReading">
-         <img ng-src="{{ book.img }}" alt="{{ book.title }}">
+         <div class="books">
+           <div class="book">
+            <img ng-src="{{ book.img }}" alt="{{ book.title }}">
+           </div>
+         </div>
          <div class="bubble">
           <strong>{{ book.title }}</strong><br>
           {{ book.author }}

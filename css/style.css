@@ -394,7 +394,7 @@ header.fixed i {
 
 .aboutme .bookshelf.container {
     max-width: 600px !important;
-    margin-bottom: 30px;
+    margin: 40px auto 30px auto;
     text-align: center;
 }
 
@@ -407,14 +407,14 @@ header.fixed i {
   text-align: center;
   display: inline-block;
   position: relative;
-  bottom: -20px;
+  bottom: 6px;
   padding: 0 20px;
   transition: all .2s;
 }
 
 .aboutme .item img {
   transition: all .2s;
-  width: 125px;
+  width: 110px;
 }
 
 .aboutme .bubble {
@@ -422,7 +422,7 @@ header.fixed i {
   -webkit-border-radius: 10px;
   background: #FFFFFF;
   border-radius: 10px;
-  bottom: -100px;
+  bottom: -130px;
   color: black;
   font-size: 16px;
   left: -85px;
@@ -452,7 +452,7 @@ header.fixed i {
   color: black !important;
 }
 
-.aboutme .item:hover img {
+.aboutme .item:hover .books {
   -moz-transform: scale(1.25) translate3d( 0, 0, 0);
   -webkit-transform: scale(1.25) translate3d( 0, 0, 0);
   position: relative;
@@ -462,6 +462,53 @@ header.fixed i {
 .aboutme .item:hover .bubble {
   opacity: 1;
   visibility: visible;
+}
+
+.aboutme .books {
+  -moz-perspective: 100px;
+  -moz-transform-style: preserve-3d translate3d( 0, 0, 0);
+  -webkit-transform-style: preserve-3d translate3d( 0, 0, 0);
+  transition: all .2s;
+}
+
+.aboutme .book {
+  -moz-perspective: 100px;
+  -moz-transform: rotateY(-3deg) translate3d( 0, 0, 0);
+  -webkit-transform: perspective(100) rotateY(-3deg) translate3d( 0, 0, 0);
+  box-shadow: none;
+  margin: 0;
+  outline: 1px solid transparent; /* Helps smooth jagged edges in Firefox */
+  position: relative;
+}
+
+.aboutme .book img {
+  max-width: 100%;
+  position: relative;
+  vertical-align: middle; 
+}
+
+.aboutme .book:before,
+.aboutme .book:after {
+  content: ' ';
+  height: 96%;
+  position: absolute;
+  top: 2%;
+  z-index: -1;
+}
+
+.aboutme .book:before {
+  background-color: darkslategray;
+  left: 7.5%;
+  width: 100%;
+}
+
+.aboutme .book:after {
+  -moz-transform: rotateY(20deg) translate3d( 0, 0, 0);
+  -webkit-transform: perspective(100) rotateY(20deg) translate3d( 0, 0, 0);
+  background-color: #EFEFEF;
+  box-shadow: inset 0px 0px 5px #aaa;
+  left: 100%;
+  width: 5%;
 }
 
 
