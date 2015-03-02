@@ -312,6 +312,15 @@ header.fixed i {
   font-weight: 700;
 }
 
+.aboutme a {
+    color: #0FA0CE;
+    text-decoration: none;
+}
+
+.aboutme a:hover {
+    color: #7fff00;
+}
+
 .aboutme p:first-of-type {
   color: aquamarine;
 }
