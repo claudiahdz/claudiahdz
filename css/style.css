@@ -630,9 +630,10 @@ div.resources {
   bottom: 0px;
   color: black;
   font: 18px 'Gochi Hand';
+  padding: 0 5px;
   position: absolute;
   text-align: center;
-  width: 110%;
+  width: 106%;
 }
 
 /* Rotations */
